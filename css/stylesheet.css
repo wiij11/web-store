@@ -1,0 +1,385 @@
+body{
+    height: auto;
+    perspective: 1170px;
+    background-color:	white;
+}
+.container-page{
+    width:1250px;
+   /*left: 10%;*/
+    height: auto;
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
+
+/*  header
+----------------------------------------------- */
+.display{
+display: inline;
+
+
+}
+.navbar {
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0px;
+
+background-color:#F0F8FF;
+
+}
+.navbar .logo {
+ padding:2px;
+    float: left;
+ width:190px;
+    height: auto;
+}
+/*.navbar .logo img {
+    width: 100px;
+    height: 60px;
+}*/
+.navbar .menu {
+    width: auto;
+  //  float:inherit;
+  display: inline;
+
+}
+.navbar .menu ul {
+    list-style: none;
+    overflow: hidden;
+
+}
+.navbar .menu ul li {
+    float:left;
+    padding:10px;
+
+}
+.navbar .menu ul li a {
+    text-decoration: none;
+  //  color: #e4ac01;
+  color: black;
+    font-size: 27px;
+    font-family: 'Caveat', cursive;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.navbar .menu ul li a:hover , .navbar .menu ul li.active {
+    color:white;
+    border: none;
+
+    background-color:#7B6462;
+    padding: 10px;
+
+}
+
+/*  slideshow Image
+-----------------------------------------------*/
+.slideshow-image {
+    width: 100%;
+margin: auto;
+
+
+
+}
+.slideshow-image img {
+    width: 900px;
+    height:900px;
+
+  position: relative;
+
+  margin: 70px 0 0px 110px;
+margin-left:10%;
+margin-top:5%;
+
+}
+/*.slideshoww-image img {
+    width: 500px;
+    height:400px;
+    // margin-left: 70px;
+    // margin-top: 40px;
+    // margin-bottom: 50px;
+  //  margin-right: 20px;
+//position: relative;
+    border-radius: 95px;
+    margin-right:5%;
+    margin-top:5%;
+}*/
+/*  about us
+-----------------------------------------------*/
+
+.about{
+    overflow: hidden;
+    padding-bottom: 100px;
+    padding-top: auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+.about h2 {
+    color: #505050;
+    font-family: 'Bree Serif', serif;
+    font-size: 38px;
+}
+.about h2 span { color: #7BCED7;font-family: 'Caveat', cursive;}
+.about p {
+    font-family: 'Bree Serif', serif;
+    color: #505050;
+    font-size: 28px;
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+/* color option
+-----------------------------------------------*/
+.color-option {
+    width: 980px;
+    height: auto;
+    margin: 70px auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    overflow: hidden;
+}
+.color-option .box{
+    width: 300px;
+    height: 300px;
+    margin: 40px 15px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform-style: preserve-3d;
+    float: left;
+}
+.box:hover {transform: rotateY(180deg);}
+.box .front img, .box .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5%;
+    background-position:  center center ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size: 20px;
+}
+.box .back p { color:#7B651D;font-family: 'Bree Serif', serif;margin-top: 60px}
+.box span { color: #A49464;font-family:'Caveat', cursive; }
+.front img {backface-visibility: hidden;}
+.back {
+    backface-visibility: hidden;
+    background-color: #FFEFC0;
+    transform: rotateY(180deg);
+}
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* intro
+-----------------------------------------------*/
+
+.intro{
+    overflow: hidden;
+    padding-top: 80px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.intro h2 {
+    font-size: 45px;
+    color: black;
+ font-family: "Times New Roman", Times, serif;
+ text-align: center;
+
+}
+
+/* show list
+-----------------------------------------------*/
+
+.show-list{
+    padding-bottom: 130px;
+    padding-top: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* #myBtnContainer { margin-left: 520px;}
+//#myBtn2Container { margin-left: 580px;}
+
+/* Style the buttons */
+.show-list  .btn , .show-list .btn2{
+    border: none;
+    outline: none;
+    padding: 12px 23px;
+    background-color: #3d0859;
+    cursor: pointer;
+    float: left;
+    margin-bottom: -40px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    border:2px solid #3d0859;
+    font-size: 20px;
+}
+.show-list .btn:hover , .show-list .btn2:hover { background-color:white; color: #d78ab7;}
+.show-list .btn.active ,
+.show-list .btn2.active{
+    background-color: #fff;
+    color: #d78ab7;
+}
+.show-list .row {
+    margin: 8px 140px;
+}.show-list .row2 {
+    margin: 8px 140px 8px 250px;
+}
+.show-list .row,
+.show-list .row > .column,
+.show-list .row2,
+.show-list .row2 > .column {
+    padding: 8px;
+}
+.show-list .column {
+    float: left;
+    width:30.33333%;
+    display: none;
+}
+.show-list  .row:after, .show-list  .row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Content */
+.show-list .row .column .content,
+.show-list .row2 .column .content{
+    padding: 10px;
+    width: 95%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: all .5s ease;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+}
+.show-list .row2 .column .content{width: 50%;}
+.show-list .row .column .content:hover,
+.show-list .row2 .column .content:hover{
+    box-shadow: 0 8px 12px 0 rgba(123, 206, 215, 0.5);
+    opacity: 1;
+}
+.show-list .row .column .content .container_img,
+.show-list .row2 .column .content .container_img{  position: relative; }
+
+.show-list .row .column .content .container_img img.photo,
+.show-list .row2 .column .content .container_img img.photo2 {
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+.show-list .row2 .column .content .container_img img.photo2 {height: 200px; }
+.show-list .row .column .content .container_img .overlay,
+.show-list .row2 .column .content .container_img .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(123, 206, 215, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition:all .5s ease;
+}
+.show-list .row2 .column .content .container_img .overlay2 {height: 200px;}
+.show-list .row .column .content .container_img:hover .overlay,
+.show-list .row2 .column .content .container_img:hover .overlay2{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.overlay .title , .overlay2 .title{
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay .title .center , .overlay2 .title .center {
+    text-align:center;
+    margin-right:-125px;
+    margin-left:-125px;
+}
+.show-list .show {
+    display: block;
+}
+
+/* account
+-----------------------------------------------*/
+
+.account{
+    overflow: hidden;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 800px;
+    margin: 70px auto;
+}
+.account h2 {
+    font-size: 28px;
+    color: #3d0859;
+    font-family: 'Caveat', cursive;
+    text-align: left;
+}
+.account form input[type="text"],
+.account form input[type="email"],
+.account form input[type="password"]{
+    display: block;
+    padding: 10px;
+    margin:  0 0 20px ;
+    border: solid 1px #ccc;
+    width: 30%;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+.account form label{
+    display: block;
+    width: 40%;
+    padding: 11px 0px;
+    color: #d78ab7;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+    text-align: left;
+
+}
+.account form input[type="submit"] {
+    background:#3d0859;
+    border: solid 1px #777;
+    height: 40px;
+    padding: 0 40px;
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-family: 'Caveat', cursive;
+
+}
+.account form input[type="submit"]:hover {
+    cursor: pointer;
+}
